@@ -101,7 +101,7 @@ public class ValidatorService
 
     @Path("/validation-request")
     @POST
-    @Consumes("application/xml")  
+    @Consumes({"application/xml", "*/*"})  
     @Produces({MediaType.APPLICATION_JSON })
     public String validateCcda(String docXml) throws Exception
     {
