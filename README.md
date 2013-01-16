@@ -1,5 +1,22 @@
 # MDHT Consolidated CDA Validator: JSON API
 
+## Online Demo
+Hosted by [AppFog](http://appfog.com): `http://mdht-webapp.aws.af.cm/validation-request`
+
+```
+# Get a sample document
+curl "https://raw.github.com/chb/sample_ccdas/master/NIST Samples/CCDA_CCD_b1_Ambulatory_v2.xml" \
+     -o sample-ccda.xml
+
+# Validate it
+curl -X POST \
+    --header "Content-Type:application/xml" \
+    -d @sample-ccda.xml \
+    http://mdht-webapp.aws.af.cm/validation-request
+```
+
+## Build, Test, Deploy
+
 ### Setup
 
 Requirements:
@@ -19,6 +36,9 @@ sh setup.sh
 ```
 mvn jetty:run
 ```
+
+### Test with `curl`
+```
 curl -X POST \
   --header "Content-Type:application/xml" \
   -d @/sample/ccda.xml \
@@ -26,10 +46,9 @@ curl -X POST \
   -vvv 
 ```
 
-### Test with `curl`
-
 ### Response
-```
+
+```javascript
 {
   "schemaValidationDiagnostics": 0,
   "emfResourceDiagnostics": 0,
@@ -53,19 +72,8 @@ curl -X POST \
 ### Deploying
 Deploy `target/ccda-server.war` as needed.
 
-### Online Demo
-Hosted by [AppFog](http://appfog.com):
 
-```
-curl -X POST \
-  --header "Content-Type:application/xml" \
-  -d @/sample/ccda.xml \
-  http://mdht-webapp.aws.af.cm/validation-request \
-  -vvv 
-
-```
-
-### Limitations
+## Limitations
 
 * *MDHT stack is not thread-safe*, so the validation code is currently wrapped in
   a `synchronized` block.  This effectively limits the number of concurrent
