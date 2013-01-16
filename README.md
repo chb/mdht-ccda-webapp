@@ -13,6 +13,8 @@ curl -X POST \
     --header "Content-Type:application/xml" \
     -d @sample-ccda.xml \
     http://mdht-webapp.aws.af.cm/validation-request
+
+# (Wait for it.  Like 15 seconds.)
 ```
 
 ## Build, Test, Deploy
