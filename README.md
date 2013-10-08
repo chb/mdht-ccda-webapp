@@ -5,7 +5,7 @@ Hosted by [AppFog](http://appfog.com): `http://mdht-webapp.aws.af.cm/validation-
 
 ```
 # Get a sample document
-curl "https://raw.github.com/chb/sample_ccdas/master/NIST Samples/CCDA_CCD_b1_Ambulatory_v2.xml" \
+curl "https://raw.github.com/chb/sample_ccdas/master/NIST%20Samples/CCDA_CCD_b1_Ambulatory_v2.xml" \
      -o sample-ccda.xml
 
 # Validate it
