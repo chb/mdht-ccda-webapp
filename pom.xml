@@ -62,10 +62,22 @@
             <version>2.4</version>
             <classifier>jdk15</classifier>
         </dependency>
+
+
 <dependency>
   <groupId>org.openhealthtools.mdht.uml.cda</groupId>
-  <artifactId>consol</artifactId>
-  <version>1.2.0.201212201425</version>
+  <artifactId>ihe</artifactId>
+  <version>1.2.0.201309181642</version>
+</dependency>
+<dependency>
+  <groupId>org.openhealthtools.mdht.emf</groupId>
+  <artifactId>runtime</artifactId>
+  <version>1.0.0.201309181641</version>
+</dependency>
+<dependency>
+  <groupId>org.openhealthtools.mdht.uml.cda</groupId>
+  <artifactId>hitsp</artifactId>
+  <version>1.2.0.201309181642</version>
 </dependency>
 <dependency>
   <groupId>net.sourceforge.lpg</groupId>
@@ -73,19 +85,9 @@
   <version>1.1.0.v200803061910</version>
 </dependency>
 <dependency>
-  <groupId>org.openhealthtools.mdht.uml.hl7</groupId>
-  <artifactId>datatypes</artifactId>
-  <version>1.2.0.201212201425</version>
-</dependency>
-<dependency>
-  <groupId>org.openhealthtools.mdht.uml.hl7</groupId>
-  <artifactId>vocab</artifactId>
-  <version>1.2.0.201212201425</version>
-</dependency>
-<dependency>
   <groupId>org.openhealthtools.mdht.uml.cda</groupId>
-  <artifactId>mu2consol</artifactId>
-  <version>1.2.0.201212201425</version>
+  <artifactId>consol</artifactId>
+  <version>1.2.0.201309181642</version>
 </dependency>
 <dependency>
   <groupId>org.eclipse</groupId>
@@ -100,12 +102,32 @@
 <dependency>
   <groupId>org.openhealthtools.mdht.uml</groupId>
   <artifactId>cda</artifactId>
-  <version>1.2.0.201212201425</version>
+  <version>1.2.0.201309181641</version>
 </dependency>
 <dependency>
-  <groupId>org.openhealthtools.mdht.emf</groupId>
-  <artifactId>runtime</artifactId>
-  <version>1.0.0.201212201425</version>
+  <groupId>org.openhealthtools.mdht.uml.hl7</groupId>
+  <artifactId>rim</artifactId>
+  <version>1.2.0.201309181641</version>
+</dependency>
+<dependency>
+  <groupId>org.openhealthtools.mdht.uml.hl7</groupId>
+  <artifactId>datatypes</artifactId>
+  <version>1.2.0.201309181641</version>
+</dependency>
+<dependency>
+  <groupId>org.openhealthtools.mdht.uml.cda</groupId>
+  <artifactId>ccd</artifactId>
+  <version>1.2.0.201309181642</version>
+</dependency>
+<dependency>
+  <groupId>org.openhealthtools.mdht.uml.cda</groupId>
+  <artifactId>cdt</artifactId>
+  <version>1.2.0.201309181642</version>
+</dependency>
+<dependency>
+  <groupId>org.apache.commons</groupId>
+  <artifactId>lang</artifactId>
+  <version>2.3.0.v201005080501</version>
 </dependency>
 <dependency>
   <groupId>org.eclipse.ocl</groupId>
@@ -113,20 +135,28 @@
   <version>1.3.0.v200905271400</version>
 </dependency>
 <dependency>
+  <groupId>org.openhealthtools.mdht.uml.hl7</groupId>
+  <artifactId>vocab</artifactId>
+  <version>1.2.0.201309181641</version>
+</dependency>
+<dependency>
   <groupId>org.eclipse.emf.ecore</groupId>
   <artifactId>xmi</artifactId>
   <version>2.5.0.v200906151043</version>
 </dependency>
 <dependency>
-  <groupId>org.openhealthtools.mdht.uml.hl7</groupId>
-  <artifactId>rim</artifactId>
-  <version>1.2.0.201212201425</version>
+  <groupId>org.openhealthtools.mdht.uml.cda</groupId>
+  <artifactId>mu2consol</artifactId>
+  <version>1.2.0.201309181642</version>
 </dependency>
 <dependency>
   <groupId>org.eclipse.emf</groupId>
   <artifactId>common</artifactId>
   <version>2.5.0.v200906151043</version>
 </dependency>
+
+
+
 </dependencies>
     <build>
         <finalName>ccda-server</finalName>

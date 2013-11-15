@@ -63,10 +63,12 @@ public class ValidatorService
 
         ValidationResult result = new ValidationResult();
 
-        Mu2consolPackage.eINSTANCE.eClass();
         long t0 = System.currentTimeMillis();
 
-        ClinicalDocument clinicalDocument = CDAUtil.load(inStream, result);
+	CDAUtil.loadAs(
+		inStream,  
+		Mu2consolPackage.eINSTANCE.getTransitionOfCareAmbulatorySummary(),
+		result);
 
         for (Diagnostic diagnostic : result.getErrorDiagnostics()) {
             errors.add(diagnostic.getMessage());
