@@ -14,7 +14,10 @@ curl -X POST \
     -d @sample-ccda.xml \
     http://mdht-webapp.aws.af.cm/validation-request
 
-# (Wait for it.  Like 15 seconds.)
+# Wait for it. 
+
+The **first request can take ~15 seconds** as the MDHT framework bootstraps.
+Subsequent requests should be more like **~1s**
 ```
 
 ## Build, Test, Deploy
