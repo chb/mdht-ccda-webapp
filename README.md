@@ -23,7 +23,7 @@ curl -X POST \
 
 Requirements:
 * `Java` 1.6+
-* `maven 2`
+* `maven 3` (**Note**: *will not work with maven 2*)
 * `python`
 * `wget`
 
